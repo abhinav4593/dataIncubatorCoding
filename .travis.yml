@@ -10,3 +10,9 @@ install:
 
 script:
   - pytest
+
+
+
+deploy:
+  provider: heroku
+  app: dataincubatorcodingabhinav
