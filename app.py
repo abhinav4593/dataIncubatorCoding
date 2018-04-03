@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, url_for, redirect
 from werkzeug import secure_filename
 import base64
 
+
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 app = Flask(__name__)
 app.config['img_data']=''
@@ -31,5 +32,6 @@ def upload_file():
 def uploaded_file(filename):
      return render_template('template.html',input_image=app.config['img_data'])
 
+#App Run
 if __name__ == '__main__':
     app.run()
