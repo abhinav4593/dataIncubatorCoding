@@ -1,0 +1,9 @@
+<H1>Image Uploading and Display</H1>
+<form method="POST" action="{{ url_for('upload_file') }}" enctype="multipart/form-data">
+
+    <label for="file-input" class="custom-file-upload">
+        <i class="fa fa-cloud-upload"></i> Upload Image
+    </label>
+   <input  id="file-input" name=file type="file" align="center">
+    <input type="button" value="Submit" onclick="this.form.submit();">
+</form>
