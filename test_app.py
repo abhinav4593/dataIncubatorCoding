@@ -25,7 +25,7 @@ class FlaskTestCase(TestCase):
 
     def test_post(self):
         data={}
-        with open("/imgTest/houston-cougars.jpg",'r') as img1:
+        with open("houston-cougars.jpg",'r') as img1:
             imgStringIO1 = StringIO(img1.read())
         data['file'] = (imgStringIO1, 'houston-cougars.jpg')
         response = self.client.post(url_for('upload_file'), data=data, follow_redirects=True, content_type='multipart/form-data')
