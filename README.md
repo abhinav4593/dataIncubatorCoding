@@ -1,4 +1,4 @@
-# dataIncubatorCoding
+# dataIncubatorCoding[![Build Status](https://travis-ci.org/abhinav4593/dataIncubatorCoding.svg?branch=master)](https://travis-ci.org/abhinav4593/dataIncubatorCoding)
 CodingTest
 
 Write a very simple Flask/Django app which accepts a photo upload via 
