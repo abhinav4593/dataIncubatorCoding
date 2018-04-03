@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, url_for, send_from_directory, redirect
+from flask import Flask, render_template, request, url_for, redirect
 from werkzeug import secure_filename
 import base64
 
