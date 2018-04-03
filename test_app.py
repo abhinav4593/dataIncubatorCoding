@@ -2,7 +2,7 @@ from flask_testing import TestCase
 from flask import url_for
 import unittest
 from app import app
-import StringIO
+from StringIO import *
 
 import os
 
