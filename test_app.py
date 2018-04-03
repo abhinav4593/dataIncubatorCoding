@@ -3,8 +3,10 @@ from flask import url_for
 import unittest
 from app import app
 from StringIO import *
-class FlaskTestCase(TestCase):
 
+import os
+
+class FlaskTestCase(TestCase):
     def create_app(self):
         app.config['TESTING']=True
         return app
@@ -24,7 +26,7 @@ class FlaskTestCase(TestCase):
     def test_post(self):
         data={}
         """Ensure index page loads correctly."""
-        with open("D:\PycharmProjectFiles\dataIncubator\imgTest\houston-cougars.jpg",'r') as img1:
+        with open("../imgTest/houston-cougars.jpg",'r') as img1:
             imgStringIO1 = StringIO(img1.read())
         data['file'] = (imgStringIO1, 'houston-cougars.jpg')
         response = self.client.post(url_for('upload_file'), data=data, follow_redirects=True, content_type='multipart/form-data')
